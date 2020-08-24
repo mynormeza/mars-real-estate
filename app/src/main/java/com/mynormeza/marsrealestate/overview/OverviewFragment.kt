@@ -21,6 +21,8 @@ class OverviewFragment : Fragment() {
         binding.lifecycleOwner = this
 
         binding.viewModel = viewModel
+        binding.photosGrid.adapter = PhotoGridAdapter()
+
 
         setHasOptionsMenu(true)
         return binding.root
