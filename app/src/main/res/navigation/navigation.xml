@@ -14,5 +14,9 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.mynormeza.marsrealestate.detail.DetailFragment"
-        android:label="DetailFragment" />
+        android:label="DetailFragment" >
+        <argument
+            android:name="selectedProperty"
+            app:argType="com.mynormeza.marsrealestate.network.MarsProperty" />
+    </fragment>
 </navigation>
